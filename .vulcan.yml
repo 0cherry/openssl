@@ -29,8 +29,8 @@ test-case: [0-5, 8-10]
 
 test-command: | # 테스트 실행
   bash -c '[ -f AUTOMAKE_TEST_CASE.output ] || make list-tests | grep test_ > AUTOMAKE_TEST_CASE.output'
-  bash -c 'make -j8 test
+  bash -c 'make -j8 test'
 
 test-coverage-command: | # 커버리지 테스트 실행
   bash -c '[ -f AUTOMAKE_TEST_CASE.output ] || make list-tests | grep test_ > AUTOMAKE_TEST_CASE.output'
-  bash -c 'make CFLAGS=\"--coverage -O0 -g -DDPP_ENABLE_GCOV\" LDFLAGS=\"-lgcov\" -j8 test'
+  bash -c 'make -j8 test'
