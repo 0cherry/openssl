@@ -1,0 +1,15 @@
+# /.github/workflows/test-0cherry-github-action.yml
+name: Github Action Test
+
+on:
+  push
+
+jobs:
+  vulcan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test vulcan action
+        uses: Suresoft-GLaDOS/vulcan-action@test
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
