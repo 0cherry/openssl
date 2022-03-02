@@ -30,8 +30,8 @@ test-list: | # 테스트 리스트 커맨드 / 테스트를 하나씩 실행하�
 test-case: 
 
 test-command: | # 테스트 실행
-  bash -c "make -j8 test TESTS=$(cat TEST_CASE.output)"
+  bash -c "make -j8 test TESTS=?"
 
 test-coverage-command: | # 커버리지 테스트 실행 / 테스트 대상을 입력받아서 하나씩 실행할 수 있어야 함
-  bash -c "make -j8 test TESTS=$(cat TEST_CASE.output)"
+  bash -c "make -j8 test TESTS=?"
 
