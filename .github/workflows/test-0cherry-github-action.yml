@@ -2,7 +2,8 @@
 name: Github Action Test
 
 on:
-  push
+  workflow_dispatch:
+  # push
 
 jobs:
   vulcan:
