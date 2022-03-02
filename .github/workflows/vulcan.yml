@@ -1,0 +1,14 @@
+name: Github Action Test
+
+on:
+  push
+
+jobs:
+  vulcan:
+    runs-on: self-hosted
+
+    steps:
+      - name: Test vulcan action
+        uses: Suresoft-GLaDOS/vulcan-action@test
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
