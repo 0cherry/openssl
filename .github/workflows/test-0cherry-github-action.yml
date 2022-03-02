@@ -1,4 +1,5 @@
-name: Manally Run Vulcan
+# /.github/workflows/test-0cherry-github-action.yml
+name: Github Action Test
 
 on:
   workflow_dispatch:
